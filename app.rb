@@ -1,7 +1,7 @@
+require 'rubygems'
 require 'sinatra'
-require 'yaml'
 require 'active_record'
-require 'sass'
+require 'logger'
 
 # Connect to database
 ActiveRecord::Base.establish_connection(YAML::load(File.open('config/database.yml')))
